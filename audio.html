@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. Audio Interface</title>
+    <link rel="stylesheet" href="css/audio.css">
+</head>
+
+<body>
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="video/5021.mp4" type="video/mp4"></source>
+       </video>
+      
+    <header>
+        <h1>J.A.R.V.I.S.</h1>
+
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="photo.html">Фото</a>
+        <a href="audio.html">Аудио</a>
+        <a href="video.html">видео</a>
+    </nav>
+    <audio controls>
+        <source src="myAudio.mp3" type="audio/mpeg" />
+        <source src="myAudio.ogg" type="audio/ogg" />
+        <p>
+          Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+          <a href="myAudio.mp4">ссылка на аудио</a>
+        </p>
+      </audio>
+    <div class="content-wrapper">
+        <aside class="left-panel">
+            <h2>Controls</h2>
+            <div class="control-slider">
+                <label>Volume</label>
+                <input type="range" min="0" max="100" value="50">
+
+            </div>
+
+            <div class="control-slider">
+                <label>Bass</label>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+            <div class="control-slider">
+                <label>Treble</label>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+
+            <div class="control-buttons">
+                <button>Back</button>
+                <button>Pause</button>
+                <button>Next</button>
+            </div>
+        </aside>
+
+        <main>
+            <div class="container">
+                <canvas id="visualizer"></canvas>
+            </div>
+        </main>
+
+        <aside class="right-panel">
+
+            <h2>Additional Info</h2>
+            <p>More content and widgets.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 J.A.R.V.I.S. Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
